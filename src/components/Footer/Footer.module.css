@@ -1,4 +1,10 @@
 @import "../../styles/global.css";
-.background{
-  background-color: rgb(45, 160, 70);
+.container{
+  background-color: var(--dark-green);
+  color: white;
+  padding: calc(var(--padding)/2);
+}
+
+.footer a{
+  color: var(--light-red);
 }

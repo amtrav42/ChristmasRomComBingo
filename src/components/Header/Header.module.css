@@ -1,4 +1,8 @@
 @import "../../styles/global.css";
 .background{
-  background-color: rgb(139, 58, 108);
+  background-color: var(--bright-red);
+  font-family: var(--font-highlights);
+  font-size: 1.5rem;
+  color: white;
+  padding: var(--padding);
 }
