@@ -11,7 +11,7 @@ export default function Footer() {
   return (
   <div className={FooterStyles.container}>
     <p className={FooterStyles.acknowledgement}>
-      We would like to acknowledge the Traditional Custodians of the lands
+      Christmas RomCom Bingo would like to acknowledge the Traditional Custodians of the lands
       on which this website was created, is hosted and is viewed.
       This website was created on the lands of the Boon Wurrung and Woiwurrung (Wurundjeri)
       peoples of the Kulin Nation. We pay respects to their Elders past, present and emerging,
