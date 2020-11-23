@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+:root{
+  --bright-red:#fa636c;
+  --light-red: #ff9492;
+  --light-green: #8ea763;
+  --mid-green: #bdd59b;
+  --dark-green: #65805f;
+  --font-body: 'Lora', serif;
+  --font-highlights: 'Parisienne', cursive;
+  --padding: 1rem;
+}
 div, p {
   text-align: center;
+  font-family: var(--font-body);
+}
+
+a {
+  text-decoration: none;
 }
