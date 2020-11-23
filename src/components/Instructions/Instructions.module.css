@@ -1,0 +1,5 @@
+@import "../../styles/global.css";
+.background{
+  background-color: var(--light-red);
+  padding: var(--padding);
+}
