@@ -10,8 +10,9 @@ export default function BingoCard() {
   const selectedContentList = shuffled.slice(0, 9);
 
   return (
-    <>
-      <div className={BingoCardStyles.background}>I'm a bingo card title</div>
+    <div className={BingoCardStyles.container}>
+      <div className={BingoCardStyles.title}>I'm a bingo card title</div>
+      <div className={BingoCardStyles.wrapper}>
       {
         selectedContentList.map((bingoItemProps) => (
           <BingoItem
@@ -19,6 +20,7 @@ export default function BingoCard() {
           />
         ))
       }
-    </>
+      </div>
+    </div>
   )
 };

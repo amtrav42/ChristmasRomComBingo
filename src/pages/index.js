@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import BingoCard from "../components/BingoCard";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import Score from "../components/Score";
 import Instructions from "../components/Instructions";
 import Footer from "../components/Footer";
@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Header />
       <BingoCard />
-      <Button />
+      {/* <Button /> */}
       <Score />
       <Instructions />
       <Footer />

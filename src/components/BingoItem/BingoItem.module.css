@@ -1,5 +1,18 @@
 @import "../../styles/global.css";
-.background{
+.card{
   background-color: var(--mid-green);
   padding: var(--padding);
+  border: 2px solid var(--dark-green);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card:hover{
+  background-color: var(--light-green);
 }

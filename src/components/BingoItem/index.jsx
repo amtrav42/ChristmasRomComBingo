@@ -6,6 +6,6 @@ export default function BingoItem(props) {
     content,
   } = props;
   return (
-    <div className={BingoItemStyles.background}>{content}</div>
+    <div className={BingoItemStyles.card}>{content}</div>
   )
 };

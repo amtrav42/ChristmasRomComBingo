@@ -3,6 +3,7 @@
   background-color: var(--dark-green);
   color: white;
   padding: calc(var(--padding)/2);
+  font-size: small;
 }
 
 .footer a{
