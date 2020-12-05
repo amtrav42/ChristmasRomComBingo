@@ -20,5 +20,11 @@ export default [
   "An awkward lingering kiss",
   "New Christmas Who Dis?",
   "You guys shouldn't get Married that quick!",
-  "My Big Fat Christmas Wedding"
+  "My Big Fat Christmas Wedding",
+  "The RomCom game that saved Christmas",
+  "The Prince that saved Christmas",
+  "The kiss that saved Christmas",
+  "The puppy that saved Christmas",
+  "Such a suspiciously wise child",
+  "Children have such sage dating advice"
 ]
