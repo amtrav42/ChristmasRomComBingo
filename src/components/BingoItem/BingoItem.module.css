@@ -16,3 +16,13 @@
 .card:hover{
   background-color: var(--light-green);
 }
+
+.isChecked{
+  background-color: var(--light-red);
+  border: 2px solid var(--bright-red);
+  opacity: 0.5;
+}
+
+.isChecked:hover{
+  background-color: var(--bright-red);
+}
