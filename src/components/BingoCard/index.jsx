@@ -3,6 +3,7 @@ import BingoCardStyles from "./BingoCard.module.css";
 import BingoItemList from "../../data/BingoItemList";
 import BingoTitleList from "../../data/bingoCardTitleList";
 import BingoItem from "../BingoItem";
+import Score from "../Score";
 
 export default function BingoCard() {
   const [title, setTitle] = useState();
@@ -44,6 +45,9 @@ export default function BingoCard() {
         ))
       }
       </div>
+      <Score 
+        value={checkedList.length}
+      />
     </div>
   )
 };
