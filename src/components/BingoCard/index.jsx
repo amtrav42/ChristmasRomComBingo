@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
 import BingoCardStyles from "./BingoCard.module.css";
 import BingoItemList from "../../data/BingoItemList";
 import BingoTitleList from "../../data/bingoCardTitleList";
 import BingoItem from "../BingoItem";
 
 export default function BingoCard() {
-  // Shuffle array
-  const shuffled = BingoItemList.sort(() => 0.5 - Math.random());
-  // Get sub-array of first n elements after shuffled
-  const selectedContentList = shuffled.slice(0, 9);
-  const title = BingoTitleList[Math.floor(Math.random()*BingoTitleList.length)];
+  const [title, setTitle] = useState();
+  const [checkedList, setCheckedList] = useState([]);
+
+  const [selectedContentList, setSelectedContentList] = useState([]);
+  if ( selectedContentList.length === 0) {
+    // Shuffle array
+    const shuffled = BingoItemList.sort(() => 0.5 - Math.random());
+    // Get sub-array of first 9 elements after shuffled
+    setSelectedContentList(shuffled.slice(0, 9));
+  }
+  if (!title) {
+    // Selects a random title from the title list
+    setTitle(BingoTitleList[Math.floor(Math.random()*BingoTitleList.length)]);
+  }
 
   return (
     <div className={BingoCardStyles.container}>
@@ -18,8 +27,19 @@ export default function BingoCard() {
       {
         selectedContentList.map((bingoItemProps) => (
           <BingoItem
+            key={`bingoItem_${bingoItemProps.id}`}
             content={bingoItemProps.content} 
-            // isChecked
+            isChecked={checkedList.includes(bingoItemProps.id)}
+            onClick={() => {
+              setCheckedList(
+                checkedList.includes(bingoItemProps.id)
+                ?
+                // removing item from array if it gets clicked on again through filtering
+                checkedList.filter(currentID => bingoItemProps.id !== currentID)
+                :
+                [...checkedList, bingoItemProps.id]
+                );
+            }}
           />
         ))
       }

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default [
   {
     content: 'Sage advice from a child',
