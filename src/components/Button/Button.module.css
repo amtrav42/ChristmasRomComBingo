@@ -1,5 +1,14 @@
 @import "../../styles/global.css";
 .background{
-  background-color: var(--bright-red);
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid var(--dark-green);
+  border-radius: 4px;
+  color: var(--dark-green);
   padding: var(--padding);
+  transition: .3s;
+}
+
+.background:hover{
+  background-color: rgba(255, 255, 255, 80%);
 }

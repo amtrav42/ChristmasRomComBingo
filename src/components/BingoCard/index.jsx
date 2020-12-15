@@ -4,6 +4,7 @@ import BingoItemList from "../../data/BingoItemList";
 import BingoTitleList from "../../data/bingoCardTitleList";
 import BingoItem from "../BingoItem";
 import Score from "../Score";
+import WinCard from "../WinCard";
 
 export default function BingoCard() {
   const [title, setTitle] = useState();
@@ -48,6 +49,12 @@ export default function BingoCard() {
       <Score 
         value={checkedList.length}
       />
+      {
+        checkedList.length===selectedContentList.length && (
+          <WinCard />
+        )
+      }
+
     </div>
   )
 };
