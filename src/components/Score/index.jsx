@@ -6,6 +6,10 @@ export default function Score(props) {
     value
   } = props;
   return (
-    <div className={ScoreStyles.background}>{value}</div>
+    <div>
+      <div className={ScoreStyles.heading}>Your Score</div>
+      <div className={ScoreStyles.background}>{value}</div>
+    </div>
+
   )
 };
