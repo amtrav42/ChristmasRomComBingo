@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <div className={HeaderStyles.background}>
       <h1>A Christmas RomCom Game</h1>
+      <img className={HeaderStyles.image} src={'/mistletoe.PNG'}/>
     </div>
   )
 };

@@ -6,4 +6,11 @@
   color: white;
   padding: var(--padding);
   border-bottom: white 5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  max-width: 70px;
+  margin-left: 0.5em;
 }
