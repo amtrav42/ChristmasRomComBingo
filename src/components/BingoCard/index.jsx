@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BingoCardStyles from "./BingoCard.module.css";
-import BingoItemList from "../../data/BingoItemList";
+import BingoItemList from "../../data/bingoItemList";
 import BingoTitleList from "../../data/bingoCardTitleList";
 import BingoItem from "../BingoItem";
 import Score from "../Score";
