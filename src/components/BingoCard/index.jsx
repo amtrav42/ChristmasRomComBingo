@@ -17,14 +17,9 @@ export default function BingoCard() {
     // Get sub-array of first 9 elements after shuffled
     setSelectedContentList(shuffled.slice(0, 9));
   }
-  if (!title) {
-    // Selects a random title from the title list
-    setTitle(BingoTitleList[Math.floor(Math.random()*BingoTitleList.length)]);
-  }
 
   return (
     <div className={BingoCardStyles.container}>
-      <div className={BingoCardStyles.title}>{title}</div>
       <div className={BingoCardStyles.wrapper}>
       {
         selectedContentList.map((bingoItemProps) => (

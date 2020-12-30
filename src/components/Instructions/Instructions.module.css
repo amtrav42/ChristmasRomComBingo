@@ -1,5 +1,19 @@
 @import "../../styles/global.css";
-.background{
+.heading{
+  padding: var(--padding) 0 0 0;
+  background-color: var(--light-red);
+  font-size: 2rem;
+  font-family: var(--font-highlights);
+}
+.list{
+  width: 100%;
+  max-width: 550px;
+  list-style: decimal !important;
+}
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--light-red);
   padding: var(--padding);
 }

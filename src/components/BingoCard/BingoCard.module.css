@@ -4,12 +4,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(238, 225, 225);
-  background-image: url(/static/chrissytree.PNG);
+  background-color: var(--bright-red);
+  border-bottom: white solid 5px;
 }
 .title{
   width: 100%;
-  background-color: var(--mid-green);
+  background-color: var(--bright-red);
   padding: var(--padding);
   text-align: center;
 }

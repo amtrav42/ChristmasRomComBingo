@@ -2,8 +2,9 @@
 .container{
   background-color: var(--dark-green);
   color: white;
-  padding: calc(var(--padding)/2);
+  padding: calc(var(--padding));
   font-size: small;
+  border-top: 5px white solid;
 }
 
 .footer a{

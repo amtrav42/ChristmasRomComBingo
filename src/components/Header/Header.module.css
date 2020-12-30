@@ -5,4 +5,5 @@
   font-size: 1.5rem;
   color: white;
   padding: var(--padding);
+  border-bottom: white 5px solid;
 }
